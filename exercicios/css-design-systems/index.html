@@ -1,0 +1,71 @@
+<!-- 
+	Documentation: 
+	https://www.figma.com/file/udWyes5Zfj14qQDmD6oUzL/Edit---Design-Systems?type=design&node-id=2%3A783&mode=dev&t=RszSJCDWvtv4ecS1-1
+-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Design System</title>
+		<link rel="stylesheet" href="styles/globals.css" />
+		<link rel="stylesheet" href="styles/button.css" />
+		<link rel="stylesheet" href="styles/input.css" />
+		<link rel="stylesheet" href="styles/avatar.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<h3 class="wrapper__title">Avatars</h3>
+			<div class="wrapper__content">
+				<div class="flex">
+					<!-- Conteúdo aqui -->
+					<a href="">
+						<img src="./assets/user.jpeg" alt="avatar" class="avatar small">
+					</a>
+					
+					<a href="">
+						<img src="./assets/user.jpeg" alt="avatar" class="avatar medium">
+					</a>
+
+					<a href="">
+						<img src="./assets/user.jpeg" alt="avatar" class="avatar large">
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="wrapper">
+			<h3 class="wrapper__title">Buttons</h3>
+			<div class="wrapper__content">
+				<div class="flex">
+					<!-- Botões Primários - Conteúdo aqui -->
+					<button class="btn btn--primary">Label</button>
+					<button class="btn btn--danger">Label</button>
+					<button class="btn btn--success">Label</button>
+				</div>
+				<div class="flex">
+					<!-- Botões Secundários - Conteúdo aqui -->
+					<button class="btn btn--primary-outline">Label</button>
+					<button class="btn btn--danger-outline">Label</button>
+					<button class="btn btn--success-outline">Label</button>
+				</div>
+				<div class="flex">
+					<!-- Botões Terciários - Conteúdo aqui -->
+					<button class="btn btn--primary">
+						<i data-feather="zap"></i>
+						<span>Label</span></button>
+					<button class="btn btn--danger">
+						<i data-feather="zap"></i>
+						<span>Label</span></button>
+					<button class="btn btn--success">
+						<i data-feather="zap"></i>
+						<span>Label</span></button>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<script>
+		feather.replace();
+	</script>
+</html>

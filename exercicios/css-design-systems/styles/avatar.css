@@ -1,0 +1,27 @@
+:root {
+    --size: 8px;
+    --radius: 2px;
+}
+
+.avatar {
+    border-radius: 20%;
+}
+
+.small {
+    border-radius: var(--radius);
+    width: calc(var(--size) * 3) ;
+    height: calc(var(--size) * 3) ;
+    /* fn(args) */
+}
+
+.medium {
+    border-radius: calc(var(--radius) * 2);
+    width: calc(var(--size) * 5) ;
+    height: calc(var(--size) * 5) ;
+}
+
+.large {
+    border-radius: calc(var(--radius) * 3);
+    width: calc(var(--size) * 7) ;
+    height: calc(var(--size) * 7) ;
+}

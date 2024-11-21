@@ -1,0 +1,43 @@
+.btn {
+    color: white; 
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn--primary{
+    background: #005FB2;
+    border: #005FB2;
+}
+
+.btn--danger {
+    background: #C23934;
+    border: #C23934;
+}
+
+.btn--success {
+    background:#4BCA81 ;
+    border: #4BCA81;
+    color: black;
+
+}
+
+.btn--primary-outline{
+    color: #005FB2;
+    border: 1px solid #005FB2;
+    background-color: white;
+}
+
+.btn--danger-outline {
+    color: #C23934;
+    border: 1px solid #C23934;
+    background-color: white;
+}
+
+.btn--success-outline {
+    color: #4BCA81;
+    border: 1px solid #4BCA81;
+    background-color: white;
+}
