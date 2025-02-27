@@ -1,0 +1,165 @@
+.cards-section {
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    margin: 40px 0;
+    .cards__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2 {
+        font-size: $medium26;
+        margin: 0;
+        font-weight: normal;
+        text-shadow: $text-stroke;
+        @media (min-width:1024px){
+            font-size: $bold40;
+            font-weight: $font-weight-extrabold;
+            text-shadow: $text-shadow;
+            }
+        }
+        p {
+        width: 68%;
+        text-shadow: $text-stroke;
+        @media (min-width:1024px){
+            font-size: $regular20;
+            width: 50%;
+            text-shadow: none;
+            }
+        }
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 100vw;
+        height: 420px;
+        top: 45px;
+        @media (min-width:1024px){
+            height: 280px;
+        }
+        .video-wrapper {
+            display: flex;
+            position: relative;
+            background: $bg-section;
+            border: $border-line;
+            width: 100%;
+            height: 100%;
+            @media (min-width:1024px){
+                background: $bg-about_section;
+            }
+            video {
+            opacity: -0.9;
+            width: 100%;
+            height: 100%;
+            }
+        }
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            position: absolute;
+            top: -45px;
+            @media (min-width: 1024px) {
+                width: 40%;
+            }
+            .card {
+                display: flex;
+                flex-direction: column;
+                width: 40%;
+                justify-content: center;
+                align-items: center;
+                margin: 8px;
+                padding: 10px 0;
+                border: $border-line;
+                border-radius: 3px;
+                background: $color-white;
+                position: relative;
+                z-index: 1;
+                cursor: pointer;
+                .circle {
+                    background: $color-active;
+                    width: 45px;
+                    aspect-ratio: 1;
+                    border-radius: 50%;
+                }
+                h5 {
+                    font-size: $regular14;
+                    font-weight: $font-weight-normal;
+                    margin: 10px;
+                }
+                span {
+                    font-size: $regular10;
+                    line-height: 150%;
+                }
+                @media (min-width: 1024px) {
+                    width: 27%;
+                    &:hover {
+                        background: $color-active;
+                        color: $color-white;
+                        border: none;
+                        .circle {
+                            background: $color-white;
+                        }
+                    }
+                } 
+            }
+        }
+    }
+}
+
+.cards-articles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 10px;
+    @media(min-width:1024px){
+        flex-wrap: nowrap;
+    }
+    .article{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+        border-radius: 3px;
+        width: calc(50% - 10px);
+        .articles__content{
+            display: flex;
+            flex-direction: column;
+            border-radius: 2px;
+            .rectangle{
+                background: $bg-shapes;
+                width: 100%;
+                height: 120px;
+                margin-bottom: 5px;
+                border-radius: 2px;
+            }
+            .tab-chips {
+                align-items: start;
+            }
+            p {
+                font-size: $regular10;
+                line-height: 15px;
+                text-align: left;
+            }
+            .author{
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                font-size: $regular8;
+                @media(min-width:1024px){
+                    font-weight: $font-weight-extrabold;
+                }
+                .mini-circle{
+                    width: 20px;
+                    height: 20px;
+                    background: $bg-shapes;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}

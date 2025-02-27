@@ -1,0 +1,185 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.intro-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin: 30px auto;
+    max-width: 730px;
+    .intro-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        h1 {
+            font-size: $bold40;
+            margin: 0;
+        @media (min-width:$desktop) {
+            font-size: $bold64;
+            }
+        }
+        p {
+            font-size: $regular16;
+        @media (min-width:$desktop) {
+            font-size: $medium24;
+            }
+        }
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        max-width: 425px;
+        margin: 20px auto;
+        @media (min-width:1024px){
+            margin: 40px auto;
+        }
+        .content-video{
+            width: 100%;
+            border-radius: 4px;
+            box-shadow: $drop-shadow;
+            }
+    }
+    .vertical-line {
+        border-left: $border-shadow;
+        height: 67px;
+        transform: translate(50%, 80%);
+        @media (min-width:1024px){
+            height: 100px;
+            transform: translate(50%, 75%);
+        }
+    }
+}
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: $border-shadow;
+    background: $bg-section;
+    @media (min-width:1024px) {
+        border: none;
+    }
+    .about__title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        @media (min-width:1024px){
+            margin: 20px;
+        }
+        h2 {
+            font-size: $medium24;
+            text-shadow: $text-stroke;
+            @media (min-width:1024px){
+                font-size: $bold40;
+                font-weight: $font-weight-normal;
+                text-shadow: none;
+            }
+        }
+        p {
+            text-shadow: $text-stroke;
+            width: 68%;
+            margin: 0;
+            @media (min-width:1024px){
+                font-size: $regular20;
+                width: 50%;
+                text-shadow: none;
+            }
+        }
+    }
+    .image {
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        margin: 20px;
+        box-shadow: $drop-shadow;
+        @media (min-width:1024px){
+            width: 42%;
+        }
+        img {
+            width: 100%;
+            border: $border-shadow;
+            background: $bg-img;
+            @media (min-width:1024px){
+            border: none;
+            }
+        }
+    }
+}
+
+.articles-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .title__articles {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 30px;
+        padding: 0 36px;
+        h2 {
+        font-size: $medium26;
+        font-weight: $font-weight-normal;
+        @media(min-width:1024px){
+            margin-top: 50px;
+            font-size: $medium30;
+            font-weight: $font-weight-semibold;
+            }
+        }
+    }
+    .articles{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        @media(min-width:1024px){
+            flex-wrap: nowrap;
+            width: 60%;
+        }
+    }
+}
+.advertising-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 380px;
+    margin-bottom: 30px;
+    background: $color-active;
+    @media(min-width:1024px){
+        width: 85%;
+        height: 200px;
+        margin-bottom: 60px;
+    }
+    .advertising{
+        @media(min-width: 1024px){
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 35px;
+        }
+    }
+    h3 {
+        font-size: $medium30;
+        font-weight: $font-weight-light;
+        color: $color-white;
+        margin: 0;
+        @media(min-width: 1024px){
+            font-size: $medium30;
+        }
+    }
+}

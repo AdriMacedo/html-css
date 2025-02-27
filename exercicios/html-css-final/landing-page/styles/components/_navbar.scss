@@ -1,0 +1,61 @@
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    padding: 14px 10px;
+    border: $border-line;
+        @media (min-width: $desktop) {
+            border: none;
+            margin: 0 30px;
+        }
+    .logo {
+        display: flex;
+        border: $border-line;
+        border-radius: 50%;
+        background: $bg-logo;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        width: 30px;
+        height: 30px;
+        .logo-item {
+            display: flex;
+            position: relative;
+            width: 14px;
+            height: 17px;
+            justify-content: center;
+            align-items: center;
+            border: $border-line;
+            overflow: hidden;
+            background: $color-active;
+            @media (min-width: $desktop) {
+                border: none;
+            }
+            img {
+                display: flex;
+                position: relative;
+                width: 27px;
+            }
+        }
+    }
+    .menu {
+        display: none;
+        @media (min-width: $desktop) {
+            display: flex;
+            list-style: none;
+            }
+        a {
+        display: flex;
+        font-size: $regular14;
+        text-decoration: none;
+        color: $color-black;
+        margin-right: 20px;
+        gap: 25px;
+        }
+    }    
+}
+.horizontal-line {
+        display: flex;
+        border-bottom: $border-line;
+}

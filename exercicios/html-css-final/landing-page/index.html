@@ -7,43 +7,46 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <header class="navigation">
+    <header>
         <div class="nav-bar">
-            <a href="index.html" aria-label="homepage">
-            <img id="logo" class="logo" src="assets/logo.png" alt="logo image">
-            </a>    
+            <div class="logo">
+                <div class="logo-item"> 
+                    <a href="index.html" aria-label="homepage">
+                    <img src="assets/logo.png" alt="logo image">
+                    </a>    
+                </div>
+            </div>
             <div class="menu">
                 <a href="/pricing">Pricing</a>
                 <a href="#about">About</a>
                 <a href="#tutorials">Tutorials</a>
                 <a href="">Blog</a>
             </div>
+            <div class="auth-buttons">
+                <a href="" class="btn signin">Sign in</a>
+                <a href="" class="btn signup">Sign up</a>
+            </div>
         </div>
-        <div class="auth-buttons">
-            <button class="signin-btn">Sign in</button>
-            <button class="signup-btn inactive">Sign up</button>
-        </div>
+        <div class="horizontal-line"></div>
     </header>
-
     <main>
         <section id="home" class="intro-section">
-            <div class="header">
+            <div class="intro-header">
                 <h1>Make your website wonderful</h1>
                 <p>Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.</p>
             </div>
             <div class="links">
-                <button class="trial active" href="/trial">Set a free trial</button>
-                <button class="learn-more inactive" href="/learnmore">Learn More</button>
+                <a href="" class="btn trial">Set a free trial</a>
+                <a href="" class="btn learn-more">Learn More</a>
             </div>
             <div class="content">
                 <video controls muted autoplay src="assets/video.mp4" type="video/mp4" class="content-video">
 				Seu navegador não suporta o elemento de vídeo.
                 </video>
-                <button class="watch-more active">Watch more</button>
+                <button class="btn watch-more">Watch more</button>
             </div>
             <div class="vertical-line"></div>
         </section>
-
         <section id="about" class="about-section">
             <div class="about__title">
                 <h2>How Simple Works</h2>
@@ -52,9 +55,7 @@
             <div class="image">
                 <img src="assets/hero-image.png" alt="hero-image">
             </div>
-
         </section>
-
         <section id="tutorials" class="cards-section">
             <div class="cards__title">
                 <h2>Explore the solutions</h2>
@@ -68,139 +69,131 @@
                 </div>
                 <div class="cards">
                     <div class="card">
-                        <div class="card__content">
                             <div class="circle"></div>
                             <h5>Headless CMS</h5>
                             <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                         </div>
-                    </div>
                     <div class="card">
-                    <div class="card__content">
                             <div class="circle"></div>
                             <h5>Headless CMS</h5>
                             <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                         </div>
-                    </div>
+                        <div class="card">
+                            <div class="circle"></div>
+                            <h5>Headless CMS</h5>
+                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                        </div>
                     <div class="card">
-                        <div class="card__content">
                             <div class="circle"></div>
                             <h5>Headless CMS</h5>
                             <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                         </div>
-                    </div>
                     <div class="card">
-                        <div class="card__content">
                             <div class="circle"></div>
                             <h5>Headless CMS</h5>
                             <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                         </div>
-                    </div>
                     <div class="card">
-                        <div class="card__content">
                             <div class="circle"></div>
                             <h5>Headless CMS</h5>
                             <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card__content">
-                            <div class="circle"></div>
-                            <h5>Headless CMS</h5>
-                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
-
         <section class="articles-section">
             <div class="title__articles">
-                <h2>The most innovative businesses choose Simple</h2>
-            </div>
-            <div class="tab-chips">
-                <button class="chip active">Development</button>
-                <button class="chip">Blockchain</button>
-                <button class="chip">Nextjs</button>
-                <button class="chip">Reactjs</button>
-            </div>
-            <div class="cards-articles">
-                <div class="article">
-                    <div class="articles__content">
-                        <div class="rectangle"></div>
-                        <div class="tab-chips smaller">
-                            <button class="chip">Development</button>
-                            <button class="chip active">Blockchain</button>
-                        </div>
-                    <p>“How HubSpot saved 25% on developing costs by switching to Simple.”</p>
-                    <div class="author">
-                        <div class="mini-circle"></div>
-                        <span>By Harry Potter</span>
-                    </div>
-                    </div>
-                </div>
-                <div class="article">
-                    <div class="articles__content">
-                        <div class="rectangle"></div>
-                        <div class="tab-chips smaller">
-                            <button class="chip">Development</button>
-                            <button class="chip active">Blockchain</button>
-                        </div>
-                    <p>“How HubSpot saved 25% on developing costs by switching to Simple.”</p>
-                    <div class="author">
-                        <div class="mini-circle"></div>
-                        <span>By Harry Potter</span>
-                    </div>
+                    <h2>The most innovative businesses choose Simple</h2>
+                    <div class="tab-chips">
+                        <button class="chip active">Development</button>
+                        <button class="chip">Blockchain</button>
+                        <button class="chip">Nextjs</button>
+                        <button class="chip">Reactjs</button>
                     </div>
             </div>
-                <div class="article">
-                    <div class="articles__content">
-                        <div class="rectangle"></div>
-                        <div class="tab-chips smaller">
-                            <button class="chip">Development</button>
-                            <button class="chip active">Blockchain</button>
+            <div class="articles">
+                <div class="cards-articles">
+                    <div class="article">
+                        <div class="articles__content">
+                            <div class="rectangle"></div>
+                            <div class="chips">
+                                <button class="chips-smaller">Development</button>
+                                <button class="chips-smaller active">Blockchain</button>
+                            </div>
+                            <p>“How HubSpot saved 25% on developing costs by switching to Simple.”</p>
+                            <div class="author">
+                                <div class="mini-circle"></div>
+                                <span>By Harry Potter</span>
+                            </div>
                         </div>
-                    <p>“How HubSpot saved 25% on developing costs by switching to Simple.”</p>
-                    <div class="author">
-                        <div class="mini-circle"></div>
-                        <span>By Harry Potter</span>
                     </div>
-                    </div>
-                </div>
-                <div class="article">
-                    <div class="articles__content">
-                        <div class="rectangle"></div>
-                        <div class="tab-chips smaller">
-                            <button class="chip">Development</button>
-                            <button class="chip active">Blockchain</button>
+                    <div class="article">
+                        <div class="articles__content">
+                            <div class="rectangle"></div>
+                            <div class="chips">
+                                <button class="chips-smaller">Development</button>
+                                <button class="chips-smaller active">Blockchain</button>
+                            </div>
+                            <p>“How HubSpot saved 25% on developing costs by switching to Simple.”</p>
+                            <div class="author">
+                                <div class="mini-circle"></div>
+                                <span>By Harry Potter</span>
+                            </div>
                         </div>
-                    <p>“How HubSpot saved 25% on developing costs by switching to Simple.”</p>
-                    <div class="author">
-                        <div class="mini-circle"></div>
-                        <span>By Harry Potter</span>
                     </div>
+                    <div class="article">
+                        <div class="articles__content">
+                            <div class="rectangle"></div>
+                            <div class="chips">
+                                <button class="chips-smaller">Development</button>
+                                <button class="chips-smaller active">Blockchain</button>
+                            </div>
+                            <p>“How HubSpot saved 25% on developing costs by switching to Simple.”</p>
+                            <div class="author">
+                                <div class="mini-circle"></div>
+                                <span>By Harry Potter</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article">
+                        <div class="articles__content">
+                            <div class="rectangle"></div>
+                            <div class="chips">
+                                <button class="chips-smaller">Development</button>
+                                <button class="chips-smaller active">Blockchain</button>
+                            </div>
+                            <p>“How HubSpot saved 25% on developing costs by switching to Simple.”</p>
+                            <div class="author">
+                                <div class="mini-circle"></div>
+                                <span>By Harry Potter</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <section class="advertising-section">
+            <div class="advertising">
                 <h3>Ready to get started?</h3>
                 <div class="links">
-                    <button class="learn-more" href="/learnmore">Learn More</button>
+                    <button class="btn learn-more white" href="/learnmore">Learn More</button>
                 </div>
+            </div>
         </section>
     </main>
     <footer>
-        <section class="footer">
+        <div class="horizontal-line"></div>
+            <section class="footer">
             <div class="subscribe-section">
                 <h3 class="subscribe-title">Subscribe</h3>
                 <form class="subscribe-form">
-                        <input type="email" id="email" name="email" placeholder=" Email" required> 
-                        <button class="learn-more inactive" type="submit">Subscribe</button>
+                        <input type="email" id="email" name="email" placeholder=" Email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required> 
+                        <button class="btn submit" type="submit">Subscribe</button>
                 </form>
                 <p class="subscribe-description">Get the latest news and articles to your inbox every month.</p>
             </div>
-            <div class="products-section">
-                <div class="products">
+            <div class="products-resources-section"> 
+                <div class="products-section">
                     <h4>Products</h4>
                     <ul>
                         <li>Web Studio</li>
@@ -210,21 +203,21 @@
                         <li>Command-line</li>
                     </ul>
                 </div>
-                <div class="resources">
+                <div class="resources-section">
                     <h4>Resources</h4>
                     <ul>
-                    <li>Web Studio</li>
+                        <li>Web Studio</li>
                         <li>DynamicBox Flex</li>
                         <li>Programming Forms</li>
                         <li>Integrations</li>
                         <li>Command-line</li>
                     </ul>
                 </div>
-        </section>
-        <div class="logo-full">
+            </div>
+            <div class="logo-full">
                 <img src="/assets/logo-full.png" alt="logo-full image">
-        </div>
-        
+            </div>
+        </section>
     </footer>
 </body>
 </html>
