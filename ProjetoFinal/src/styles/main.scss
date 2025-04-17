@@ -1,0 +1,12 @@
+@use 'abstracts/variables' as *;
+@use 'abstracts/mixins' as *;
+
+@use 'base/reset';
+@use 'base/typography';
+
+html, body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: $color-white;
+    color: $color-black;
+}

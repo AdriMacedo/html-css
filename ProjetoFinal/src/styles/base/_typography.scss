@@ -1,0 +1,11 @@
+@use "../abstracts/variables" as *;
+
+@font-face {
+    font-family: "WhyteInktrap-Book";
+    src: url("/assets/fonts/WhyteInktrap-Book.woff2");
+}
+
+html,
+body {
+    font-family: $font-family;
+}

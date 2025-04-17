@@ -1,0 +1,74 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  margin: 18px 12px;
+}
+@media (min-width: 1024px) {
+  .navbar {
+    margin: 18px 24px;
+  }
+}
+
+.navbar__home {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__menu {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .navbar__menu {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+.navbar__menu button {
+  border: none;
+  background-color: transparent;
+  align-items: center;
+}
+
+.icon-text {
+  font-size: 0.9em;
+  line-height: 1;
+  transform: translateY(-4px);
+}
+
+.navbar__hamburger {
+  display: block;
+  border: none;
+  cursor: pointer;
+}
+@media (min-width: 1024px) {
+  .navbar__hamburger {
+    display: none;
+  }
+}
+
+.navbar__mobile {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 10;
+  top: 100%;
+  right: 0%;
+}
+.navbar__mobile button {
+  background-color: transparent;
+  cursor: pointer;
+  text-align: right;
+  padding: 5px;
+}
+.navbar__mobile button:focus, .navbar__mobile button:active {
+  border: 1px solid #000000;
+}
+@media (min-width: 1024px) {
+  .navbar__mobile {
+    display: none;
+  }
+}/*# sourceMappingURL=NavBar.css.map */

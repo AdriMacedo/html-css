@@ -1,0 +1,45 @@
+@use '../styles/abstracts/variables' as *;
+
+.btn {
+  border-radius: $border-radius;
+  border: none;
+  cursor: pointer;
+  padding: 16px 24px;
+  display: inline-flex;
+  gap: 5px;
+  font-size: 14px;
+
+  &.home {
+    width: 95px;
+    height: 29px;
+    background-color: $btn-color-home-desktop;
+
+    &:hover {
+      background-color: $btn-color-home-mobile;
+    }
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+  &.shop {
+    background-color: $btn-color-shop;
+    color: $btn-text-color;
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+  &.subscribe {
+    background-color: $btn-color-subscribe;
+    color: $btn-text-color;
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+  &.link {
+    background-color: transparent;
+    color: $color-black;
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+}
