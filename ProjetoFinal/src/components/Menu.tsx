@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom";
+import "./Menu.scss";
+
 function Menu() {
   return (
-    <>
-      <div>
-        <div>
+      <div className="menu">
+        <div className="menu__section">
           <h3>Shop by Category</h3>
           <ul>
             <li>Sectionals</li>
@@ -13,19 +15,23 @@ function Menu() {
             <li>Sleep Kits</li>
             <li>Ottomans</li>
             <li>Seating Accessories</li>
+            <Link to="/productpage">
             <li>All Seating</li>
+            </Link>
           </ul>
         </div>
-        <div>
+        <div className="menu__section">
           <h3>Shop by Upholstery</h3>
           <ul>
             <li>Performance Fabric Seating</li>
             <li>Italian Leather Seating</li>
             <li>Performance Velvet Seating</li>
+            <Link to="/productpage">
             <li>All Seating</li>
+            </Link>
           </ul>
         </div>
-        <div>
+        <div className="menu__section">
           <h3>Shop by Collection</h3>
           <ul>
             <li>Nomad Collection</li>
@@ -37,7 +43,6 @@ function Menu() {
           </ul>
         </div>
       </div>
-    </>
   );
 }
 

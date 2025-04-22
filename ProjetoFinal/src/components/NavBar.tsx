@@ -3,6 +3,7 @@ import Menu from './Menu';
 import Button from './Button';
 import { useState } from 'react';
 import './NavBar.scss';
+import './Menu.scss';
 
 function NavBar() {
   const [showMenu, setShowMenu] = useState(false);
@@ -10,22 +11,19 @@ function NavBar() {
 
   return (
     <nav className="navbar">
-      <div className="navbar__home">
+      <div className="navbar__home" onMouseEnter={() => setShowMenu(true)} onMouseLeave={() => setShowMenu(false)}>
+        {/* no hover mostra o menu */}
         {/* Homepage */}
         <Link to="/">
           <Button variant={'home'} />
         </Link>
+        {showMenu && (
+          <div className="navbar__home-menu">
+            <Menu />
+          </div>
+        )}
       </div>
-
-      {/* menu hamburger mobile */}
-   
-        <button className="navbar__hambuguer" onClick={() => setHamburgerOpen(!hamburgerOpen)}>
-        {hamburgerOpen ? "X" : "☰"}
-      </button>
-      
-
-      {/* no hover mostra o menu */}
-      <div className="navbar__menu" onMouseEnter={() => setShowMenu(true)} onMouseLeave={() => setShowMenu(false)}>
+      <div className="navbar__menu">
         <Link to="/productpage">
           <button className="btn" aria-label="See all seating products" title="See all seating products">
             Seating <span className="icon-text">⌄</span>
@@ -43,9 +41,11 @@ function NavBar() {
         <button className="btn">
           Storage <span className="icon-text">⌄</span>
         </button>
-        {showMenu && <Menu />}
       </div>
-
+      {/* menu hamburger mobile */}
+      <button className="navbar__hamburger" onClick={() => setHamburgerOpen(!hamburgerOpen)}>
+        {hamburgerOpen ? 'x' : '☰'}
+      </button>
       {/* menu no mobile */}
       {hamburgerOpen && (
         <div className="navbar__mobile">

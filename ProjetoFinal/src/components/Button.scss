@@ -43,3 +43,15 @@
     }
   }
 }
+  .splash-section__btn{
+    position: absolute;
+    z-index: 3;
+    top: 85%;
+    left: 7%;
+    transition: top 0.5s ease, left 0.5s ease;
+    @media (min-width:$breakpoint-desktop) {
+     top: 18%;
+     left: 10%;   
+    }
+  }
+

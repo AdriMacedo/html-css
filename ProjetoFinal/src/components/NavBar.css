@@ -2,7 +2,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
   position: relative;
   margin: 18px 12px;
 }
@@ -13,8 +12,18 @@
 }
 
 .navbar__home {
+  position: relative;
+}
+
+.navbar__home-menu {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  position: absolute;
+  z-index: 10;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #FFFFFF;
 }
 
 .navbar__menu {
@@ -43,6 +52,8 @@
   display: block;
   border: none;
   cursor: pointer;
+  font-size: 30px;
+  background-color: transparent;
 }
 @media (min-width: 1024px) {
   .navbar__hamburger {
@@ -63,6 +74,7 @@
   cursor: pointer;
   text-align: right;
   padding: 5px;
+  width: 100%;
 }
 .navbar__mobile button:focus, .navbar__mobile button:active {
   border: 1px solid #000000;

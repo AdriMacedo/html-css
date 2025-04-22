@@ -1,70 +1,79 @@
 @use '../styles/abstracts/variables' as *;
 
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    position: relative;
-    margin: 18px 12px;
-    @media (min-width: $breakpoint-desktop) {
-      margin: 18px 24px;
-
-    }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin: 18px 12px;
+  @media (min-width: $breakpoint-desktop) {
+    margin: 18px 24px;
   }
-.navbar__home {
-    display: flex;
-    align-items: center;
 }
+.navbar__home {
+  position: relative;
+}
+.navbar__home-menu {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  z-index: 10;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: $color-white;
+}
+
 .navbar__menu {
-    display: none;
-    @media (min-width: $breakpoint-desktop){
-        display: flex;
-        gap: 20px;
-    }
-    
+  display: none;
+  @media (min-width: $breakpoint-desktop) {
+    display: flex;
+    gap: 20px;
+  }
 }
 .navbar__menu button {
-    border: none;
-    background-color: transparent;
-    align-items: center;
+  border: none;
+  background-color: transparent;
+  align-items: center;
 }
 
 .icon-text {
-    font-size: 0.9em;
-    line-height: 1;
-    transform: translateY(-4px);
+  font-size: 0.9em;
+  line-height: 1;
+  transform: translateY(-4px);
 }
 
 .navbar__hamburger {
-    display: block;
-    border: none;
-    cursor: pointer;
-    
-    @media (min-width: $breakpoint-desktop) {
-        display: none;
-    }
+  display: block;
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+  background-color: transparent;
+  @media (min-width: $breakpoint-desktop) {
+    display: none;
+  }
 }
 
 .navbar__mobile {
-    display: flex;
-    flex-direction: column;
-    position:absolute;
-    z-index: 10;
-    top: 100%;
-    right: 0%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 10;
+  top: 100%;
+  right: 0%;
 
-    button {
-        background-color: transparent;
-        cursor: pointer;
-        text-align: right;
-        padding: 5px;
-        &:focus, &:active {
-            border: 1px solid $color-black;
-        }
+  button {
+    background-color: transparent;
+    cursor: pointer;
+    text-align: right;
+    padding: 5px;
+    width: 100%;
+    &:focus,
+    &:active {
+      border: 1px solid $color-black;
     }
-    @media (min-width: $breakpoint-desktop){
-        display: none;
-            }
-        
+  }
+  @media (min-width: $breakpoint-desktop) {
+    display: none;
+  }
 }

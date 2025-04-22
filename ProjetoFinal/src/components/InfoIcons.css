@@ -1,0 +1,32 @@
+.info-icon__container {
+  background-color: #F7EEE3;
+  display: flex;
+  width: 100%;
+  margin: 10px 0;
+}
+@media (min-width: 1024px) {
+  .info-icon__container {
+    flex-direction: row;
+  }
+}
+
+.info-icon__card {
+  display: flex;
+  flex-direction: column;
+}
+.info-icon__card img {
+  margin-right: 16px;
+}
+.info-icon__card p {
+  white-space: pre-line;
+  line-height: 1.5;
+  font-size: 12px;
+  margin-right: 65px;
+}
+
+.info-icon__wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 12px;
+}/*# sourceMappingURL=InfoIcons.css.map */

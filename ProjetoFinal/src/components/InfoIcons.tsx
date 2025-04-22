@@ -1,3 +1,4 @@
+import "./InfoIcons.scss";
 
 type InfoIconsProps = {
     text: string;
@@ -7,7 +8,8 @@ type InfoIconsProps = {
 function InfoIcons ({text, icon}: InfoIconsProps) {
 
     return (
-        <div>
+        
+        <div className="info-icon__wrapper">
             <img src={icon} alt={`icon ${icon}`} />
             <p>{text}</p>
         </div>

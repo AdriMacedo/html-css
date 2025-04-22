@@ -38,4 +38,18 @@
 }
 .btn.link:active {
   transform: scale(0.9);
+}
+
+.splash-section__btn {
+  position: absolute;
+  z-index: 3;
+  top: 85%;
+  left: 7%;
+  transition: top 0.5s ease, left 0.5s ease;
+}
+@media (min-width: 1024px) {
+  .splash-section__btn {
+    top: 18%;
+    left: 10%;
+  }
 }/*# sourceMappingURL=Button.css.map */
