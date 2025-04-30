@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import Title from './Title';
-import "./CustomProduct.scss";
+
+import './CustomProduct.scss';
+import Button from './Button';
 
 type CustomProductProps = {
   label: string | 'Fabric Color - Navy Blue';
@@ -29,17 +30,25 @@ function CustomProduct({ label, price, colors, upgrades }: CustomProductProps) {
   };
 
   return (
-    <div className='custom-product'>
-      <Title>{label}</Title>
+    <div className="custom-product">
+      <h2 className="custom-product__title">{label}</h2>
       <p>${price}+ Free Shipping</p>
-      <p>Fabric Color - {selectedColor.name}</p>
-      <div>
+      <p>
+        <strong>Fabric Color -</strong> {selectedColor.name}
+      </p>
+      <div className="colors">
         {colors.map((color) => (
-          <button key={color.name} onClick={() => handleColorClick(color)} title={color.name} />
+          <button
+            key={color.name + color.hex}
+            onClick={() => handleColorClick(color)}
+            title={color.name}
+            className={`color-button ${selectedColor.hex === color.hex ? 'selected' : ''}`}
+            style={{ backgroundColor: color.hex }}
+          />
         ))}
       </div>
-      <div>
-        <span>Upgrades</span>
+      <div className="upgrades">
+        <h4>Upgrades</h4>
         {upgrades.map((upgrade) => (
           <div key={upgrade.id}>
             <input
@@ -54,6 +63,8 @@ function CustomProduct({ label, price, colors, upgrades }: CustomProductProps) {
           </div>
         ))}
       </div>
+      <Button variant={'shop'} label="ADD TO CARD" onClick={() => {}} />
+
     </div>
   );
 }

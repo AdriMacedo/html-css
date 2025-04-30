@@ -1,4 +1,4 @@
-import Button from '../components/Button';
+
 import CustomProduct from '../components/CustomProduct';
 import Footer from '../components/Footer';
 import KeyFeatures from '../components/KeyFeatures';
@@ -21,23 +21,25 @@ function ProductDetails() {
   ];
 
   const upgrades = [
-    { name: 'Moveable chaise', id: 'chaise', price: 495 },
-    { name: 'Ottoman', id: 'ottoman', price: 345 },
-    { name: 'Lumbar Pillows', id: 'pillows', price: 135 },
-    { name: 'Sleep Kit', id: 'sleep-kit', price: 295 },
+    { name: ' Moveable chaise', id: 'chaise', price: 495 },
+    { name: ' Ottoman', id: 'ottoman', price: 345 },
+    { name: ' Lumbar Pillows', id: 'pillows', price: 135 },
+    { name: ' Sleep Kit', id: 'sleep-kit', price: 295 },
   ];
 
   return (
     <>
       <NavBar />
       <div className="product-details__section">
-        <Title>Nomad Collection</Title>
-        <ProductCard  imageUrl={'src/assets/assets/productsCarousel/1/product.webp'} />
+        <Title className='nomad-collection__title'>Nomad Collection</Title>
+        <div className='product-details__container'>
+
+        <ProductCard imageUrl={'src/assets/assets/productsCarousel/1/product.webp'} />
         {/* colocar a segunda imagem com hover */}
 
         <CustomProduct label="Block Nomad Sofa" price={1595} colors={colors} upgrades={upgrades} />
-        <Button variant={'shop'} label="ADD TO CARD" onClick={() => {}} />
-        <Title>Dimensions</Title>
+        </div>
+        <Title className="dimensions__title">Dimensions</Title>
         <ProductDimensions />
         <Title>About this piece</Title>
         <h4>
