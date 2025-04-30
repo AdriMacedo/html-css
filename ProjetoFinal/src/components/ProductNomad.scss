@@ -1,0 +1,43 @@
+@use '../styles/abstracts/variables' as *;
+.nomad-card__container {
+  display: flex;
+  position: relative;
+  height: 498px;
+  background-color: $bg-color-container;
+  @media (min-width: $breakpoint-desktop) {
+    height: 700px;
+    padding: 40px;
+  }
+}
+.nomad-card {
+  margin: 12px;
+  position: relative;
+  z-index: 1;
+  @media (min-width: $breakpoint-desktop) {
+    margin: 80px;
+  }
+  &__title {
+    margin-top: 10px;
+    font-size: 12px;
+    letter-spacing: 10px;
+    text-decoration: underline;
+    font-style: italic;
+  }
+  &__text {
+    margin-top: 30px;
+    width: 290px;
+    line-height: 37px;
+    font-size: 20px;
+    font-style: italic;
+  }
+}
+.nomad-card__image-section {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+}
+.nomad-card__image {
+  width: clamp(296px, 50vw, 696px);
+  height: auto;
+  object-fit: contain;
+}

@@ -1,0 +1,15 @@
+@use '../styles/abstracts/variables' as *;
+
+.socials {
+  display: none;
+  @media (min-width: $breakpoint-desktop) {
+    display: flex;
+    gap: 32px;
+    img {
+      width: 30px;
+      height: 30px;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+}

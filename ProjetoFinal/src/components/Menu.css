@@ -1,7 +1,7 @@
 .menu {
   display: flex;
   gap: 20px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .menu__section {
@@ -23,4 +23,4 @@ ul li {
 }
 ul li:hover {
   text-decoration: underline;
-}/*# sourceMappingURL=Menu.css.map */
+} /*# sourceMappingURL=Menu.css.map */

@@ -1,0 +1,78 @@
+@use '../styles/abstracts/variables' as *;
+
+.carousel-deliveries__container {
+  display: flex;
+  width: 100vw;
+  gap: 16px;
+  padding: 30px 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scroll-padding-left: 20px;
+  &::before,
+  &::after {
+    content: '';
+    flex: 1;
+  }
+
+  .carousel-image {
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+    width: 156px;
+    height: 235px;
+    position: relative;
+    overflow: visible;
+    &:last-child {
+      margin-right: 20px;
+    }
+    transition:
+      width 0.7s ease,
+      height 0.7s ease;
+    @media (min-width: $breakpoint-desktop) {
+      width: 292px;
+      height: 439px;
+    }
+    img {
+      position: absolute;
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+    &__default {
+      object-fit: cover;
+      z-index: 1;
+      opacity: 1;
+    }
+    &__hover {
+      visibility: hidden;
+      z-index: 2;
+      opacity: 0;
+      transform: scale(1);
+      top: 35%;
+      transform-origin: center center;
+      transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+    }
+    &:hover {
+      .carousel-image__default {
+        opacity: 0;
+      }
+      .carousel-image__hover {
+        opacity: 1;
+        visibility: visible;
+        @media (min-width: $breakpoint-desktop) {
+          display: block;
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          width: auto;
+          height: 30vh;
+          transform: translate(-50%, -50%) scale(2);
+          z-index: 100;
+          pointer-events: none;
+        }
+      }
+    }
+  }
+}

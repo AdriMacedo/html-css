@@ -15,13 +15,14 @@
 }
 .navbar__home-menu {
   display: flex;
-  flex-direction: row;
   position: absolute;
   z-index: 10;
   top: 100%;
   left: 0;
-  width: 100%;
   background-color: $color-white;
+  @media (min-width: $breakpoint-desktop) {
+    flex-direction: row;
+  }
 }
 
 .navbar__menu {
@@ -71,6 +72,9 @@
     &:focus,
     &:active {
       border: 1px solid $color-black;
+    }
+    &:hover {
+      text-decoration: underline;
     }
   }
   @media (min-width: $breakpoint-desktop) {

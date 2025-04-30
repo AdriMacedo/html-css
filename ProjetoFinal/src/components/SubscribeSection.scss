@@ -1,0 +1,14 @@
+@use '../styles/abstracts/variables' as *;
+
+.subscribe-section {
+  background-color: $bg-color-form;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  padding: 40px 15px;
+  @media (min-width: $breakpoint-desktop) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 15px;
+  }
+}

@@ -1,0 +1,14 @@
+@use "../styles/abstracts/variables" as *;
+
+.product-card {
+    font-size: 14px;
+    margin: 15px 0;
+    color: $btn-text-color;
+}
+h4{
+    margin: 10px 0;
+}
+span {
+    color: $color-gray;
+    font-size: 12px;
+}

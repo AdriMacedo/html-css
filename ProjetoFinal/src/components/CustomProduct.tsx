@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Title from './Title';
+import "./CustomProduct.scss";
 
 type CustomProductProps = {
   label: string | 'Fabric Color - Navy Blue';
@@ -28,7 +29,7 @@ function CustomProduct({ label, price, colors, upgrades }: CustomProductProps) {
   };
 
   return (
-    <>
+    <div className='custom-product'>
       <Title>{label}</Title>
       <p>${price}+ Free Shipping</p>
       <p>Fabric Color - {selectedColor.name}</p>
@@ -53,7 +54,7 @@ function CustomProduct({ label, price, colors, upgrades }: CustomProductProps) {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 }
 export default CustomProduct;

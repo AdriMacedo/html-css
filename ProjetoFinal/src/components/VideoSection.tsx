@@ -1,15 +1,16 @@
+import './VideoSection.scss';
 
 type VideoSectionProps = {
-    videoUrl: string
+  videoUrl: string;
 };
-function VideoSection ({videoUrl}: VideoSectionProps) {
-
-    return (
-        <div>
-            <video src={videoUrl} controls autoPlay loop muted >Your browser does not support the video tag.</video>
-    
-        </div>
-    )
-};
+function VideoSection({ videoUrl }: VideoSectionProps) {
+  return (
+    <>
+      <video src={videoUrl} controls autoPlay loop muted>
+        Your browser does not support the video tag.
+      </video>
+    </>
+  );
+}
 
 export default VideoSection;

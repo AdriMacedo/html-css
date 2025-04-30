@@ -79,6 +79,9 @@
 .navbar__mobile button:focus, .navbar__mobile button:active {
   border: 1px solid #000000;
 }
+.navbar__mobile button:hover {
+  text-decoration: underline;
+}
 @media (min-width: 1024px) {
   .navbar__mobile {
     display: none;

@@ -12,10 +12,12 @@
   &.home {
     width: 95px;
     height: 29px;
-    background-color: $btn-color-home-desktop;
-
-    &:hover {
-      background-color: $btn-color-home-mobile;
+    background-color: $btn-color-home-mobile;
+    @media (min-width: $breakpoint-desktop) {
+      background-color: $btn-color-home-desktop;
+      &:hover {
+        background-color: $btn-color-home-mobile;
+      }
     }
     &:active {
       transform: scale(0.9);
@@ -24,34 +26,52 @@
   &.shop {
     background-color: $btn-color-shop;
     color: $btn-text-color;
+    margin: 30px;
     &:active {
       transform: scale(0.9);
     }
   }
+  &.see-more {
+    background-color: $btn-color-shop;
+  }
   &.subscribe {
     background-color: $btn-color-subscribe;
     color: $btn-text-color;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
     &:active {
       transform: scale(0.9);
+    }
+    @media (min-width: $breakpoint-desktop) {
+      border-top-right-radius: $border-radius;
+      border-bottom-right-radius: $border-radius;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
     }
   }
   &.link {
     background-color: transparent;
     color: $color-black;
+    font-size: 12px;
+    padding: 0%;
+    margin-top: 20px;
+    font-weight: 600;
     &:active {
       transform: scale(0.9);
     }
   }
 }
-  .splash-section__btn{
-    position: absolute;
-    z-index: 3;
-    top: 85%;
-    left: 7%;
-    transition: top 0.5s ease, left 0.5s ease;
-    @media (min-width:$breakpoint-desktop) {
-     top: 18%;
-     left: 10%;   
-    }
+.splash-section__btn {
+  position: absolute;
+  z-index: 3;
+  top: 85%;
+  left: 7%;
+  transition:
+    top 0.5s ease,
+    left 0.5s ease;
+  @media (min-width: $breakpoint-desktop) {
+    top: 18%;
+    left: 10%;
   }
-
+}
