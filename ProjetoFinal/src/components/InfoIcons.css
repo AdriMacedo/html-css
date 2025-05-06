@@ -1,5 +1,5 @@
 .info-icon__container {
-  background-color: #f7eee3;
+  background-color: #F7EEE3;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -20,17 +20,20 @@
 @media (min-width: 1024px) {
   .info-icon__card {
     flex-direction: row;
-    height: 40%;
+    justify-content: center;
+    gap: 40px;
   }
 }
 .info-icon__card img {
   margin-right: 16px;
+  width: 87px;
+  height: 90px;
 }
 .info-icon__card p {
   white-space: pre-line;
   line-height: 1.5;
   font-size: 12px;
-  width: 63%;
+  max-width: 300px;
   display: flex;
 }
 
@@ -39,10 +42,9 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  margin: 12px;
 }
 @media (min-width: 1024px) {
   .info-icon__wrapper:first-of-type {
-    background-color: #ffffff;
+    background-color: #FFFFFF;
   }
-} /*# sourceMappingURL=InfoIcons.css.map */
+}/*# sourceMappingURL=InfoIcons.css.map */

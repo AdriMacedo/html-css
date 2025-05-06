@@ -1,0 +1,14 @@
+.subscribe-section {
+  background-color: #514F4D;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  padding: 40px 15px;
+}
+@media (min-width: 1024px) {
+  .subscribe-section {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 15px;
+  }
+}/*# sourceMappingURL=SubscribeSection.css.map */

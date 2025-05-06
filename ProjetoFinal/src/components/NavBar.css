@@ -17,13 +17,16 @@
 
 .navbar__home-menu {
   display: flex;
-  flex-direction: row;
   position: absolute;
   z-index: 10;
   top: 100%;
   left: 0;
-  width: 100%;
   background-color: #FFFFFF;
+}
+@media (min-width: 1024px) {
+  .navbar__home-menu {
+    flex-direction: row;
+  }
 }
 
 .navbar__menu {

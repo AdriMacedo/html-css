@@ -1,3 +1,5 @@
+import '../components/KeyFeatures.scss';
+
 type KeyFeaturesProps = {
   image: string;
   label: string;
@@ -5,10 +7,10 @@ type KeyFeaturesProps = {
 
 function KeyFeatures({ image, label }: KeyFeaturesProps) {
   return (
-    <>
+    <div className="key-features-icon">
       <img src={image} alt={`image ${image}`} />
-      <h4>{label}</h4>
-    </>
+      <h6>{label}</h6>
+    </div>
   );
 }
 

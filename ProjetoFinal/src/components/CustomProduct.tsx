@@ -48,7 +48,7 @@ function CustomProduct({ label, price, colors, upgrades }: CustomProductProps) {
         ))}
       </div>
       <div className="upgrades">
-        <h4>Upgrades</h4>
+        <h4 className="upgrades__title">Upgrades</h4>
         {upgrades.map((upgrade) => (
           <div key={upgrade.id}>
             <input
@@ -63,8 +63,9 @@ function CustomProduct({ label, price, colors, upgrades }: CustomProductProps) {
           </div>
         ))}
       </div>
-      <Button variant={'shop'} label="ADD TO CARD" onClick={() => {}} />
-
+      <div className="add-to-cart">
+        <Button variant={'shop'} label="ADD TO CARD" onClick={() => {}} />
+      </div>
     </div>
   );
 }

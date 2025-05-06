@@ -1,15 +1,25 @@
 .menu {
   display: flex;
-  gap: 20px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
+  flex-direction: column;
+}
+@media (min-width: 1024px) {
+  .menu {
+    flex-direction: row;
+    width: 100vw;
+    gap: 40px;
+  }
 }
 
 .menu__section {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  min-width: 200px;
+  min-width: 250px;
   margin: 24px;
+}
+
+h3 {
+  padding: 6px 0;
 }
 
 ul {
@@ -23,4 +33,4 @@ ul li {
 }
 ul li:hover {
   text-decoration: underline;
-} /*# sourceMappingURL=Menu.css.map */
+}/*# sourceMappingURL=Menu.css.map */

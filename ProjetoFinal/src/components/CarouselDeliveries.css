@@ -3,10 +3,14 @@
   width: 100vw;
   gap: 16px;
   padding: 30px 20px;
-  justify-content: center;
-  overflow-x: scroll;
+  overflow-x: auto;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
+  scroll-padding-left: 20px;
+}
+.carousel-deliveries__container::before, .carousel-deliveries__container::after {
+  content: "";
+  flex: 1;
 }
 .carousel-deliveries__container .carousel-image {
   flex: 0 0 auto;
@@ -16,9 +20,6 @@
   position: relative;
   overflow: visible;
   transition: width 0.7s ease, height 0.7s ease;
-}
-.carousel-deliveries__container .carousel-image:first-child {
-  margin-left: 20px;
 }
 .carousel-deliveries__container .carousel-image:last-child {
   margin-right: 20px;

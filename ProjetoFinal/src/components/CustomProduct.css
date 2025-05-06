@@ -1,22 +1,24 @@
-@use '../styles/abstracts/variables' as *;
-
 .custom-product {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
   gap: 15px;
-  &__title {
-    font-size: 28px;
-    font-weight: 200;
-  }
-  @media (min-width: $breakpoint-desktop) {
+}
+.custom-product__title {
+  font-size: 28px;
+  font-weight: 200;
+}
+@media (min-width: 1024px) {
+  .custom-product {
     width: 40%;
   }
 }
+
 .colors {
   display: flex;
   gap: 10px;
 }
+
 .color-button {
   width: 16px;
   height: 16px;
@@ -24,25 +26,29 @@
   border: 1px solid transparent;
   cursor: pointer;
   transition: border 0.2s ease;
-  &.selected {
-    border: 2px solid $color-black;
-  }
 }
+.color-button.selected {
+  border: 2px solid #000000;
+}
+
 .upgrades {
   display: flex;
   flex-direction: column;
   padding: 10px 0;
   gap: 6px;
   font-size: 14px;
-  color: $color-gray;
-  &__title {
-    color: $color-black;
-  }
+  color: #9C9C9C;
 }
+.upgrades__title {
+  color: #000000;
+}
+
 .add-to-cart {
   display: flex;
   justify-content: flex-end;
-  @media (min-width: $breakpoint-desktop) {
+}
+@media (min-width: 1024px) {
+  .add-to-cart {
     margin-top: 50px;
   }
-}
+}/*# sourceMappingURL=CustomProduct.css.map */

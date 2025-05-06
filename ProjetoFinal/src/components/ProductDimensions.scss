@@ -1,0 +1,63 @@
+@use '../styles/abstracts/variables' as *;
+
+.dimensions__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+.dimensions__title {
+  font-size: 28px;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+.dimensions__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  @media (min-width: $breakpoint-desktop) {
+    flex-direction: row;
+  }
+}
+.dimensions__list {
+  width: 100%;
+  color: $color-gray;
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $breakpoint-desktop) {
+    width: 70%;
+  }
+}
+.dimensions__item {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  gap: 10px;
+  border-bottom: 1px solid $color-gray;
+  p,
+  span {
+    font-size: 16px;
+  }
+  @media (min-width: $breakpoint-desktop) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    p {
+      flex: 0 0 250px;
+    }
+    span {
+      flex: 1;
+      text-align: left;
+    }
+  }
+}
+.dimensions__image {
+  width: 100%;
+  @media (min-width: $breakpoint-desktop) {
+    width: 90%;
+  }
+  img {
+    width: 100%;
+    display: block;
+    object-fit: contain;
+  }
+}

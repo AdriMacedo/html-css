@@ -1,0 +1,50 @@
+.nomad-card__container {
+  display: flex;
+  position: relative;
+  height: 498px;
+  background-color: #F7EEE3;
+}
+@media (min-width: 1024px) {
+  .nomad-card__container {
+    height: 700px;
+    padding: 40px;
+  }
+}
+
+.nomad-card {
+  margin: 12px;
+  position: relative;
+  z-index: 1;
+}
+@media (min-width: 1024px) {
+  .nomad-card {
+    margin: 80px;
+  }
+}
+.nomad-card__title {
+  margin-top: 10px;
+  font-size: 12px;
+  letter-spacing: 10px;
+  text-decoration: underline;
+  font-style: italic;
+}
+.nomad-card__text {
+  margin-top: 30px;
+  width: 290px;
+  line-height: 37px;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.nomad-card__image-section {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+}
+
+.nomad-card__image {
+  width: clamp(296px, 50vw, 696px);
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}/*# sourceMappingURL=ProductNomad.css.map */

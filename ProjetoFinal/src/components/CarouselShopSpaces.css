@@ -1,0 +1,45 @@
+.carousel-shop-spaces__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  padding: 30px 15px;
+}
+@media (min-width: 1024px) {
+  .carousel-shop-spaces__container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 20px;
+  }
+}
+
+.carousel-shop-spaces__image {
+  aspect-ratio: 1/1;
+  width: 100%;
+  scroll-snap-align: start;
+  overflow: hidden;
+}
+@media (min-width: 1024px) {
+  .carousel-shop-spaces__image {
+    width: 300px;
+    flex: 0 0 auto;
+  }
+}
+.carousel-shop-spaces__image:nth-child(5) {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .carousel-shop-spaces__image:nth-child(5) {
+    display: block;
+  }
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 4px;
+  display: block;
+}/*# sourceMappingURL=CarouselShopSpaces.css.map */
